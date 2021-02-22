@@ -1,0 +1,60 @@
+$primary-menu-color: #b6b6b6;
+$primary-menu-btn-text-color: #dedede;
+$primary-menu-btn-bg: #407bff78;
+$primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
+
+.weekly-email-area {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	.weekly-svg {
+		width: 50%;
+	}
+
+	.weekly-email {
+		width: 50%;
+		background-image: url("../images/singupWeeklyNewJobs.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		align-content: center;
+		flex-wrap: wrap;
+
+		h1 {
+			width: 100%;
+			letter-spacing: 3px;
+			font-weight: 400;
+			color: #2f4f4f;
+		}
+
+		.weekly {
+			width: 100%;
+			height: 40%;
+			padding-top: 60px;
+
+			input {
+				border: none;
+				outline: none;
+				padding: 15px;
+				border-top-left-radius: 15px;
+				border-bottom-left-radius: 15px;
+				height: 70px;
+				font-size: 2rem;
+			}
+
+			button {
+				padding: 15px;
+				border: none;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				height: 70px;
+				font-size: 2rem;
+                background-color: $primary-menu-color;
+                color: $primary-menu-btn-text-color;
+			}
+		}
+	}
+}

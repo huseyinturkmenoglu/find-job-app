@@ -1,0 +1,63 @@
+$primary-menu-color: #b6b6b6;
+$primary-menu-btn-text-color: #dedede;
+$primary-menu-btn-bg: rgba(64, 123, 255, 69%);
+$primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
+
+.content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	.content-message {
+		width: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.messages {
+			width: 90%;
+			height: 50%;
+			letter-spacing: 10px;
+			h1 {
+				font-weight: 300;
+				font-size: 4.7rem;
+			}
+
+			.p-one,
+			.p-two {
+				font-size: 2.3rem;
+				color: $primary-menu-btn-bg;
+				line-height: 2;
+
+				.underline {
+					color: rgba(0, 0, 0, 0.445);
+					border-bottom: 2px solid $primary-menu-btn-bg;
+				}
+			}
+
+			.p-two {
+				width: 90%;
+				margin-bottom: 50px;
+			}
+
+			.connect-btn {
+				background-color: $primary-menu-btn-bg;
+				color: $primary-menu-btn-text-color;
+				display: inline-block;
+				margin: 0 75px;
+				padding: 25px;
+				border-radius: 15px;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.content-image {
+		width: 30%;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

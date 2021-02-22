@@ -1,0 +1,108 @@
+$primary-menu-color: #b6b6b6;
+$primary-menu-btn-text-color: #dedede;
+$primary-menu-btn-bg: #407bff78;
+$primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
+
+.searchArea {
+	display: flex;
+	flex-wrap: wrap;
+
+	.searchArea-btn {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 25px;
+
+		.search-input {
+			display: flex;
+			width: 80%;
+			background-color: $primary-menu-btn-bg;
+			padding: 20px 0px;
+			border-radius: 15px;
+
+			.search-icon {
+				width: 5%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				svg {
+					height: 30px;
+					width: 30px;
+					color: $primary-menu-btn-text-color;
+				}
+			}
+
+			.filter-input {
+				width: 90%;
+
+				input {
+					background-color: transparent;
+					outline: none;
+					border: none;
+					font-size: 2rem;
+
+					&::placeholder {
+						color: $primary-menu-btn-text-color;
+					}
+				}
+			}
+		}
+	}
+
+	.searchJobs {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-top: 75px;
+		padding: 0px 25px;
+		.job {
+			width: 15%;
+			height: 250px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			align-content: center;
+			background-color: aliceblue;
+			margin-bottom: 20px;
+			border-radius: 10px;
+
+			.firm-logo {
+				width: auto;
+				height: 50%;
+
+				img {
+					margin-top: 15px;
+				}
+			}
+
+			.job-title {
+			}
+
+			&:nth-child(odd) {
+				background-color: #f1f1f1;
+				box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+			}
+		}
+	}
+
+	.searchMode {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		.more-jobs {
+			a {
+                padding: 15px 50px;
+                background-color: $primary-menu-btn-bg;
+                height: 100%;
+                border-radius: 15px;
+                font-size: 2rem;
+                color: #fff;
+			}
+		}
+	}
+}
