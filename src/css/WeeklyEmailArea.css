@@ -1,0 +1,55 @@
+.weekly-email-area {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weekly-email-area .weekly-svg {
+  width: 50%;
+}
+
+.weekly-email-area .weekly-email {
+  width: 50%;
+  background-image: url("../images/singupWeeklyNewJobs.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.weekly-email-area .weekly-email h1 {
+  width: 100%;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: var(primary-text-color-black);
+}
+
+.weekly-email-area .weekly-email .weekly {
+  width: 100%;
+  height: 40%;
+  padding-top: 60px;
+}
+
+.weekly-email-area .weekly-email .weekly input {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 70px;
+  font-size: 2rem;
+}
+
+.weekly-email-area .weekly-email .weekly button {
+  padding: 15px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 70px;
+  font-size: 2rem;
+  background-color: var(--primary-btn-bg);
+  color: var(--primary-menu-btn-text-color);
+}

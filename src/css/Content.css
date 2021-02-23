@@ -1,0 +1,85 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .content-message {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content .content-message .messages {
+  width: 90%;
+  height: 50%;
+  letter-spacing: 10px;
+}
+
+.content .content-message .messages h1 {
+  font-weight: 300;
+  font-size: 4.7rem;
+}
+
+.content .content-message .messages .p-one,
+.content .content-message .messages .p-two {
+  font-size: 2.3rem;
+  color: var(--primary-btn-bg);
+  line-height: 2;
+}
+
+.content .content-message .messages .p-one .underline,
+.content .content-message .messages .p-two .underline {
+  color: rgba(0, 0, 0, 0.445);
+  border-bottom: 2px solid var(--primary-btn-bg);
+}
+
+.content .content-message .messages .p-two {
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+.content .content-message .messages .connect-btn {
+  background-color: var(--primary-btn-bg);
+  color: var(--primary-menu-btn-text-color);
+  display: inline-block;
+  margin: 0 75px;
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+
+.content .content-image {
+  width: 30%;
+}
+
+.content .content-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .content .content-message {
+    align-items: flex-start;
+  }
+  .content .content-message .messages h1 {
+    font-size: 2.7rem;
+  }
+  .content .content-message .messages .p-one, .content .content-message .messages .p-two {
+    font-size: 1.5rem;
+  }
+  .content .content-message .messages .connect-btn {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+/* 
+max-width: 576px
+min-width: 576px
+max-width: 768px
+max-width: 992px
+max-width: 1200px
+
+*/

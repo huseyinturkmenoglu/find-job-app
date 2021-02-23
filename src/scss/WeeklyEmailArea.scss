@@ -1,8 +1,3 @@
-$primary-menu-color: #b6b6b6;
-$primary-menu-btn-text-color: #dedede;
-$primary-menu-btn-bg: #407bff78;
-$primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
-
 .weekly-email-area {
 	width: 100%;
 	display: flex;
@@ -27,7 +22,7 @@ $primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
 			width: 100%;
 			letter-spacing: 3px;
 			font-weight: 400;
-			color: #2f4f4f;
+			color: var(primary-text-color-black);
 		}
 
 		.weekly {
@@ -52,8 +47,8 @@ $primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
 				border-bottom-right-radius: 15px;
 				height: 70px;
 				font-size: 2rem;
-                background-color: $primary-menu-color;
-                color: $primary-menu-btn-text-color;
+                background-color: var(--primary-btn-bg);
+                color: var(--primary-menu-btn-text-color);
 			}
 		}
 	}

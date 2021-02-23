@@ -1,6 +1,4 @@
 import React from "react";
-import "./WeeklyEmailArea.scss";
-import jobHunter from "../images/job-hunter";
 
 export default function WeeklyEmailArea() {
 	return (

@@ -1,5 +1,4 @@
-import './Header.scss'
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 const Header = () => {
 	return (
@@ -24,14 +23,31 @@ const Header = () => {
 				</svg>
 			</div>
 			<div className="menu">
+				<div className="mobile-menu">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						className="bi bi-list"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fillRule="evenodd"
+							d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+						/>
+					</svg>
+				</div>
 				<ul>
 					<li>About</li>
-					<li><Link to="/joblists">Jobs</Link></li>
+					<li>
+						<Link to="/joblists">Jobs</Link>
+					</li>
 					<li>Contacts</li>
 				</ul>
 			</div>
 			<div className="signUp">
-				<Link to="/new"className="signUp-btn">
+				<Link to="/new" className="signUp-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="16"
@@ -43,13 +59,11 @@ const Header = () => {
 						<path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
 					</svg>
 
-					<div className="signUp-text">
-						Sign Up
-					</div>
+					<div className="signUp-text">Sign Up</div>
 				</Link>
 			</div>
 		</div>
 	);
-}
+};
 
 export default Header;

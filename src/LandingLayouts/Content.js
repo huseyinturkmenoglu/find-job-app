@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Content.scss";
 import OnePerson from "../images/mateus-campos-felipe-bg.png";
 
 export default function Content() {

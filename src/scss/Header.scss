@@ -1,0 +1,191 @@
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 80px;
+	margin-top: 35px;
+
+	.logo {
+		width: 15%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	.menu {
+		width: 55%;
+		display: flex;
+		font-size: 35px;
+		justify-content: space-around;
+		color: var(--primary-menu-color);
+
+		.mobile-menu {
+			display: none;
+		}
+
+		ul {
+			display: flex;
+			width: 40%;
+			justify-content: space-around;
+			align-items: center;
+
+			li {
+				height: 50px;
+				cursor: pointer;
+				&:hover {
+					border-bottom: 2px solid var(--primary-menu-btn-bg-hover);
+				}
+
+				a {
+					color: var(--primary-menu-color);
+				}
+			}
+		}
+	}
+
+	.signUp {
+		width: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.signUp-btn {
+			display: flex;
+			background-color: var(--primary-menu-btn-bg);
+			color: var(--primary-menu-btn-text-color);
+			padding: 25px;
+			justify-content: space-around;
+			height: 40px;
+			align-items: center;
+			border-radius: 0.5rem;
+			cursor: pointer;
+
+			&:hover {
+				background-color: var(--primary-menu-btn-bg-hover);
+			}
+			.signUp-text {
+				letter-spacing: 5px;
+				margin: 0px 15px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.header {
+		.logo {
+			width: 50%;
+		}
+
+		.menu {
+			width: 50%;
+
+			.mobile-menu {
+				display: inline-block;
+				width: 20%;
+
+				svg {
+					width: 70%;
+					height: 70%;
+					color: var(--primary-text-color-black);
+				}
+			}
+
+			ul {
+				display: none;
+			}
+		}
+
+		.signUp {
+			width: 100%;
+			margin-top: 25px;
+		}
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.header {
+		.logo {
+			width: 60%;
+		}
+
+		.menu {
+			width: 40%;
+
+			.mobile-menu {
+				display: inline-block;
+				width: 30%;
+
+				svg {
+					width: 50%;
+					height: 100%;
+					color: var(--primary-text-color-black);
+				}
+			}
+
+			ul {
+				display: none;
+			}
+		}
+
+		.signUp {
+			width: 100%;
+			margin-top: 25px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header {
+		.logo {
+			width: 20%;
+		}
+
+		.menu {
+			width: 80%;
+
+			.mobile-menu {
+				display: none;
+			}
+
+			ul {
+				display: flex;
+				justify-content: space-evenly;
+				width: 100%;
+			}
+		}
+
+		.signUp {
+			width: 100%;
+			margin-top: 25px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.header {
+		.logo {
+			width: 15%;
+		}
+
+		.menu {
+			width: 55%;
+
+			.mobile-menu {
+				display: none;
+			}
+
+			ul {
+				display: flex;
+				justify-content: space-evenly;
+				width: 100%;
+			}
+		}
+
+		.signUp {
+			width: 30%;
+			margin-top: 0px
+		}
+	}
+}

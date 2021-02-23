@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./SearchArea.scss";
 import firmLogo from "../images/firm-logo.png";
 
 export default function SearchArea() {

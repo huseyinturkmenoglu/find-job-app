@@ -1,0 +1,100 @@
+.searchArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searchArea .searchArea-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.searchArea .searchArea-btn .search-input {
+  display: flex;
+  width: 80%;
+  background-color: var(--primary-btn-bg-45);
+  padding: 20px 0px;
+  border-radius: 15px;
+}
+
+.searchArea .searchArea-btn .search-input .search-icon {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchArea .searchArea-btn .search-input .search-icon svg {
+  height: 30px;
+  width: 30px;
+  color: var(--primary-menu-btn-text-color);
+}
+
+.searchArea .searchArea-btn .search-input .filter-input {
+  width: 90%;
+}
+
+.searchArea .searchArea-btn .search-input .filter-input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.searchArea .searchArea-btn .search-input .filter-input input::placeholder {
+  color: var(--primary-menu-btn-text-color);
+}
+
+.searchArea .searchJobs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 75px;
+  padding: 0px 25px;
+}
+
+.searchArea .searchJobs .job {
+  width: 15%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background-color: var(--primary-btn-bg-20);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.searchArea .searchJobs .job .firm-logo {
+  width: auto;
+  height: 50%;
+}
+
+.searchArea .searchJobs .job .firm-logo img {
+  margin-top: 15px;
+}
+
+.searchArea .searchJobs .job:nth-child(odd) {
+  background-color: var(--primary-color-f1);
+  box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+.searchArea .searchMode {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.searchArea .searchMode .more-jobs a {
+  padding: 15px 50px;
+  background-color: var(--primary-btn-bg-45);
+  height: 100%;
+  border-radius: 15px;
+  font-size: 2rem;
+  color: var(--primary-menu-btn-text-color);
+}

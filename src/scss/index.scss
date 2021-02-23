@@ -1,0 +1,33 @@
+:root {
+	--primary-menu-color: #b6b6b6;
+	--primary-menu-btn-text-color: #ffffff;
+	--primary-color-f1: #f1f1f1;
+	--primary-menu-btn-bg: rgba(64, 123, 255, 69%);
+	--primary-btn-bg: rgba(64, 123, 255, 100%);
+	--primary-btn-bg-45: rgba(64, 124, 255, 45%);
+	--primary-btn-bg-20: rgba(64, 124, 255, 20%);
+	--primary-text-color-black: #000000;
+	--primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@import './Header.scss';
+@import './Content.scss';
+@import './SearchArea.scss';
+@import './WeeklyEmailArea.scss';
+@import './Footer.scss';

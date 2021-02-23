@@ -9,10 +9,10 @@ export default function LandingLayout() {
     return (
         <>
             <Header />
-            <Content />
+            {/* <Content />
             <SearchArea />
             <WeeklyEmailArea />
-            <Footer />
+            <Footer /> */}
         </>
     )
 }
