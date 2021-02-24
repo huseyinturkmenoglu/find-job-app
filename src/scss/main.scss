@@ -4,6 +4,7 @@
 	--primary-color-f1: #f1f1f1;
 	--primary-menu-btn-bg: rgba(64, 123, 255, 69%);
 	--primary-btn-bg: rgba(64, 123, 255, 100%);
+	--primary-btn-bg-60: rgba(64, 123, 255, 60%);
 	--primary-btn-bg-45: rgba(64, 124, 255, 45%);
 	--primary-btn-bg-20: rgba(64, 124, 255, 20%);
 	--primary-text-color-black: #000000;
@@ -26,8 +27,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@import './Header.scss';
-@import './Content.scss';
-@import './SearchArea.scss';
-@import './WeeklyEmailArea.scss';
-@import './Footer.scss';
+@import "./Header.scss";
+@import "./Content.scss";
+@import "./SearchArea.scss";
+@import "./WeeklyEmailArea.scss";
+@import "./Footer.scss";

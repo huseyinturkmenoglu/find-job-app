@@ -1,0 +1,739 @@
+:root {
+  --primary-menu-color: #b6b6b6;
+  --primary-menu-btn-text-color: #ffffff;
+  --primary-color-f1: #f1f1f1;
+  --primary-menu-btn-bg: rgba(64, 123, 255, 69%);
+  --primary-btn-bg: rgba(64, 123, 255, 100%);
+  --primary-btn-bg-60: rgba(64, 123, 255, 60%);
+  --primary-btn-bg-45: rgba(64, 124, 255, 45%);
+  --primary-btn-bg-20: rgba(64, 124, 255, 20%);
+  --primary-text-color-black: #000000;
+  --primary-menu-btn-bg-hover: rgba(42, 66, 119, 100%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin-top: 35px;
+}
+.header .logo {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.header .menu {
+  width: 55%;
+  display: flex;
+  font-size: 35px;
+  justify-content: space-around;
+  color: var(--primary-menu-color);
+}
+.header .menu .mobile-menu {
+  display: none;
+}
+.header .menu ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .menu ul li {
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.header .menu ul li:hover {
+  border-bottom: 5px solid var(--primary-menu-btn-bg-hover);
+}
+.header .menu ul li a {
+  color: var(--primary-menu-color);
+}
+.header .signUp {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .signUp .signUp-btn {
+  display: flex;
+  background-color: var(--primary-menu-btn-bg);
+  color: var(--primary-menu-btn-text-color);
+  padding: 25px;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+.header .signUp .signUp-btn:hover {
+  background-color: var(--primary-menu-btn-bg-hover);
+}
+.header .signUp .signUp-btn .signUp-text {
+  letter-spacing: 5px;
+  margin: 0px 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .header .logo {
+    width: 50%;
+  }
+  .header .menu {
+    width: 50%;
+  }
+  .header .menu .mobile-menu {
+    display: inline-block;
+    width: 20%;
+  }
+  .header .menu .mobile-menu svg {
+    width: 70%;
+    height: 70%;
+    color: var(--primary-text-color-black);
+  }
+  .header .menu ul {
+    display: none;
+  }
+  .header .signUp {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .header .logo {
+    width: 60%;
+  }
+  .header .menu {
+    width: 40%;
+  }
+  .header .menu .mobile-menu {
+    display: inline-block;
+    width: 30%;
+  }
+  .header .menu .mobile-menu svg {
+    width: 50%;
+    height: 100%;
+    color: var(--primary-text-color-black);
+  }
+  .header .menu ul {
+    display: none;
+  }
+  .header .signUp {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header .logo {
+    width: 20%;
+  }
+  .header .menu {
+    width: 80%;
+  }
+  .header .menu .mobile-menu {
+    display: none;
+  }
+  .header .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .header .signUp {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    width: 15%;
+  }
+  .header .menu {
+    width: 55%;
+  }
+  .header .menu .mobile-menu {
+    display: none;
+  }
+  .header .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .header .signUp {
+    width: 30%;
+    margin-top: 0px;
+  }
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .content-message .messages {
+  letter-spacing: 10px;
+}
+.content .content-message .messages h1 {
+  font-weight: 300;
+}
+.content .content-message .messages .p-one,
+.content .content-message .messages .p-two {
+  color: var(--primary-btn-bg);
+}
+.content .content-message .messages .p-one .underline,
+.content .content-message .messages .p-two .underline {
+  color: rgba(0, 0, 0, 0.445);
+  border-bottom: 2px solid var(--primary-btn-bg);
+}
+.content .content-message .messages .connect-btn {
+  background-color: var(--primary-btn-bg);
+  color: var(--primary-menu-btn-text-color);
+  display: inline-block;
+  border-radius: 15px;
+  transition: all 0.35s;
+}
+.content .content-message .messages .connect-btn:hover {
+  background-color: var(--primary-menu-btn-bg-hover);
+}
+.content .content-image {
+  width: 30%;
+}
+.content .content-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .content .content-message {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .content .content-message .messages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .content .content-message .messages h1 {
+    width: 80%;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .content .content-message .messages .p-one,
+.content .content-message .messages .p-two {
+    font-size: 1.7rem;
+    width: 80%;
+    margin-bottom: 25px;
+  }
+  .content .content-message .messages .connect-btn {
+    margin: 30px 5px;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  .content .content-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content .content-image img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .content .content-message {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .content .content-message .messages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .content .content-message .messages h1 {
+    width: 80%;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .content .content-message .messages .p-one,
+.content .content-message .messages .p-two {
+    font-size: 1.7rem;
+    width: 80%;
+    margin-bottom: 25px;
+  }
+  .content .content-message .messages .connect-btn {
+    margin: 30px 5px;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  .content .content-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content .content-image img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content .content-message {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .content .content-message .messages {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .content .content-message .messages h1 {
+    width: 80%;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  .content .content-message .messages .p-one,
+.content .content-message .messages .p-two {
+    font-size: 1.9rem;
+    width: 80%;
+    margin-bottom: 25px;
+  }
+  .content .content-message .messages .connect-btn {
+    margin: 30px 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  .content .content-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content .content-image img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content .content-message {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .content .content-message .messages {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: 4px;
+  }
+  .content .content-message .messages h1 {
+    font-weight: 300;
+    font-size: 4.7rem;
+    width: 100%;
+  }
+  .content .content-message .messages .p-one,
+.content .content-message .messages .p-two {
+    font-size: 2.3rem;
+    line-height: 2;
+    width: 100%;
+  }
+  .content .content-message .messages .p-two {
+    width: 100%;
+    margin-bottom: 90px;
+  }
+  .content .content-message .messages .connect-btn {
+    margin: 0 75px;
+    padding: 25px;
+    font-size: 2rem;
+  }
+  .content .content-image {
+    width: 30%;
+  }
+  .content .content-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.searchArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchArea .searchArea-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.searchArea .searchArea-btn .search-input {
+  display: flex;
+  width: 80%;
+  background-color: var(--primary-btn-bg-45);
+  padding: 20px 0px;
+  border-radius: 15px;
+}
+.searchArea .searchArea-btn .search-input .search-icon {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchArea .searchArea-btn .search-input .search-icon svg {
+  height: 30px;
+  width: 30px;
+  color: var(--primary-menu-btn-text-color);
+}
+.searchArea .searchArea-btn .search-input .filter-input {
+  width: 90%;
+}
+.searchArea .searchArea-btn .search-input .filter-input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+}
+.searchArea .searchArea-btn .search-input .filter-input input::placeholder {
+  color: var(--primary-menu-btn-text-color);
+}
+.searchArea .searchJobs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 75px;
+  padding: 0px 25px;
+}
+.searchArea .searchJobs .job {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background-color: var(--primary-btn-bg-20);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.searchArea .searchJobs .job .firm-logo {
+  width: auto;
+  height: 50%;
+}
+.searchArea .searchJobs .job .firm-logo img {
+  margin-top: 15px;
+}
+.searchArea .searchJobs .job:nth-child(odd) {
+  background-color: var(--primary-color-f1);
+  box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+}
+.searchArea .searchMode {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.searchArea .searchMode .more-jobs a {
+  padding: 15px 50px;
+  background-color: var(--primary-btn-bg-45);
+  height: 100%;
+  border-radius: 15px;
+  font-size: 2rem;
+  color: var(--primary-menu-btn-text-color);
+  transition: all 0.35s;
+}
+.searchArea .searchMode .more-jobs a:hover {
+  background-color: var(--primary-menu-btn-bg-hover);
+}
+
+@media screen and (max-width: 576px) {
+  .searchArea .searchArea-btn .search-input {
+    width: 90%;
+    padding: 10px 0px;
+  }
+  .searchArea .searchArea-btn .search-input .search-icon {
+    width: 20%;
+  }
+  .searchArea .searchArea-btn .search-input .filter-input {
+    width: 80%;
+  }
+  .searchArea .searchArea-btn .search-input .filter-input input {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .searchArea .searchJobs .job {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .searchArea .searchArea-btn .search-input {
+    width: 90%;
+    padding: 10px 0px;
+  }
+  .searchArea .searchArea-btn .search-input .search-icon {
+    width: 20%;
+  }
+  .searchArea .searchArea-btn .search-input .filter-input {
+    width: 80%;
+  }
+  .searchArea .searchArea-btn .search-input .filter-input input {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .searchArea .searchJobs .job {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .searchArea .searchJobs .job {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .searchArea .searchArea-btn .search-input {
+    width: 80%;
+    padding: 20px 0px;
+  }
+  .searchArea .searchArea-btn .search-input .search-icon {
+    width: 5%;
+  }
+  .searchArea .searchArea-btn .search-input .search-icon svg {
+    height: 30px;
+    width: 30px;
+  }
+  .searchArea .searchArea-btn .search-input .filter-input {
+    width: 90%;
+  }
+  .searchArea .searchArea-btn .search-input .filter-input input {
+    font-size: 2rem;
+  }
+  .searchArea .searchJobs .job {
+    width: 15%;
+  }
+}
+.weekly-email-area {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.weekly-email-area .weekly-svg {
+  width: 50%;
+}
+.weekly-email-area .weekly-svg svg {
+  width: 100%;
+}
+.weekly-email-area .weekly-email {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.weekly-email-area .weekly-email h1 {
+  width: 100%;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: var(--primary-text-color-black);
+}
+.weekly-email-area .weekly-email .weekly {
+  width: 100%;
+  height: 40%;
+  padding-top: 60px;
+}
+.weekly-email-area .weekly-email .weekly input {
+  width: 50%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 70px;
+  font-size: 1.7rem;
+}
+.weekly-email-area .weekly-email .weekly button {
+  padding: 15px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 70px;
+  font-size: 1.7rem;
+  background-color: var(--primary-btn-bg);
+  color: var(--primary-menu-btn-text-color);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.weekly-email-area .weekly-email .weekly button:hover {
+  box-shadow: 0px 0px 20px 0px var(--primary-btn-bg-60);
+}
+
+@media screen and (max-width: 576px) {
+  .weekly-email-area .weekly-svg {
+    width: 100%;
+  }
+  .weekly-email-area .weekly-email {
+    width: 100%;
+    height: 100%;
+    background-image: none;
+  }
+  .weekly-email-area .weekly-email .weekly {
+    padding-top: 10px;
+  }
+  .weekly-email-area .weekly-email .weekly input {
+    background-color: var(--primary-btn-bg-20);
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-radius: 0px;
+  }
+  .weekly-email-area .weekly-email .weekly button {
+    border-radius: 15px;
+    font-size: 1.5rem;
+    height: 50px;
+    line-height: 1px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .weekly-email-area .weekly-svg {
+    width: 100%;
+  }
+  .weekly-email-area .weekly-email {
+    width: 100%;
+    height: 100%;
+    background-image: none;
+  }
+  .weekly-email-area .weekly-email .weekly input {
+    background-color: var(--primary-btn-bg-20);
+  }
+}
+@media screen and (min-width: 992px) {
+  .weekly-email-area .weekly-svg {
+    width: 50%;
+  }
+  .weekly-email-area .weekly-email {
+    width: 50%;
+    height: auto;
+    background-image: url("../images/singupWeeklyNewJobs.jpg");
+  }
+  .weekly-email-area .weekly-email .weekly input {
+    background-color: var(--primary-color-f1);
+  }
+}
+/* 
+Weekllyy
+*/
+.footer {
+  background-color: var(--primary-btn-bg-60);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.footer .social-area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.footer .social-area .social-icon {
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.footer .social-area .social-icon svg {
+  width: 2rem;
+  height: 2rem;
+  margin: 15px;
+  color: var(--primary-color-f1);
+}
+.footer .social-area .social-icon:hover {
+  background-color: var(--primary-btn-bg-20);
+  border-radius: 2rem;
+}
+.footer .project-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .project-info .project {
+  color: var(--primary-text-color-black);
+  font-weight: 500;
+}
+.footer .project-info .supporter a {
+  color: var(--primary-text-color-black);
+}
+
+@media screen and (max-width: 576px) {
+  .footer .social-area {
+    width: 100%;
+    height: 100%;
+  }
+  .footer .project-info {
+    font-size: 0.94rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .footer .social-area {
+    width: 30%;
+    height: 100%;
+  }
+  .footer .project-info {
+    font-size: 0.96rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .social-area {
+    width: 50%;
+    height: 100%;
+  }
+  .footer .project-info {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .social-area {
+    width: 20%;
+    height: 100%;
+  }
+}
+/* 
+max-width: 576px
+min-width: 576px
+max-width: 768px
+max-width: 992px
+max-width: 1200px
+*/

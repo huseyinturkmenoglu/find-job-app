@@ -8,7 +8,7 @@ export default function Content() {
 			<div className="content-message">
 				<div className="messages">
 					<h1>Find a new remote jobs</h1>
-					<p className="p-one">We collect remote jobs all around.</p>
+					<p className="p-one">We compare remote jobs all around.</p>
 					<p className="p-two">
 						We are sending the remote jobs according to
 						<span className="underline">
