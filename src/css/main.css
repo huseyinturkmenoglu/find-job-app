@@ -737,3 +737,11 @@ max-width: 768px
 max-width: 992px
 max-width: 1200px
 */
+.no-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 3.89rem 0;
+}

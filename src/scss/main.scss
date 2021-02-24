@@ -32,3 +32,13 @@ body {
 @import "./SearchArea.scss";
 @import "./WeeklyEmailArea.scss";
 @import "./Footer.scss";
+
+
+.no-page {
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 3.89rem 0;
+}

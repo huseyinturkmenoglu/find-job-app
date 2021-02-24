@@ -39,7 +39,9 @@ const Header = () => {
 					</svg>
 				</div>
 				<ul>
-					<li>About</li>
+					<li>
+						<Link to="/">Home</Link>
+					</li>
 					<li>
 						<Link to="/joblists">Jobs</Link>
 					</li>
