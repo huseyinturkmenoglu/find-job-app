@@ -86,11 +86,9 @@
 		height: 100px;
 		.more-jobs {
 			a {
-				padding: 15px 50px;
-				background-color: var(--primary-btn-bg-45);
+				background-color: var(--primary-btn-bg);
 				height: 100%;
 				border-radius: 15px;
-				font-size: 1.5rem;
 				color: var(--primary-menu-btn-text-color);
 				transition: all 0.35s;
 
@@ -118,7 +116,7 @@
 
 					input {
 						width: 100%;
-						font-size: 1.5rem;
+						font-size: 22px;
 					}
 				}
 			}
@@ -126,6 +124,15 @@
 		.searchJobs {
 			.job {
 				width: 100%;
+			}
+		}
+
+		.searchMode {
+		    .more-jobs {
+				a {
+					padding: 15px 30px;
+					font-size: 25px;
+				}
 			}
 		}
 	}
@@ -147,7 +154,7 @@
 
 					input {
 						width: 100%;
-						font-size: 1.5rem;
+						font-size: 22px;
 					}
 				}
 			}
@@ -158,11 +165,31 @@
 				width: 49%;
 			}
 		}
+
+		.searchMode {
+		    .more-jobs {
+				a {
+					padding: 15px 30px;
+					font-size: 22px;
+				}
+			}
+		}
 	}
 }
 
 @media screen and (min-width: 992px) {
 	.searchArea {
+		.searchArea-btn {
+			.search-input {
+				.filter-input {
+					width: 90%;
+
+					input {
+						font-size: 25px;
+					}
+				}
+			}
+		}
 		.searchJobs {
 			.job {
 				width: 32%;

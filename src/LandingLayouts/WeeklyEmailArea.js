@@ -23,7 +23,7 @@ export default function WeeklyEmailArea() {
 					<JobHunt />
 				</div>
 				<div className="weekly-email">
-					<h1>Sing up weekly new jobs </h1>
+					<h1>Sign up weekly new jobs </h1>
 					<div className="weekly">
 						<input
 							type="email"

@@ -4,7 +4,6 @@
 	flex-wrap: wrap;
 
 	.content-message {
-
 		.messages {
 			letter-spacing: 10px;
 			h1 {
@@ -73,10 +72,12 @@
 				}
 
 				.connect-btn {
-					margin: 30px 5px;
 					padding: 15px;
-					font-size: 1rem;
-					margin-bottom: 25px;
+					font-size: 25px;
+					letter-spacing: 3px;
+					width: 100%;
+					margin: 30px 10px;
+					text-align: center;
 				}
 			}
 		}
@@ -124,7 +125,8 @@
 				.connect-btn {
 					margin: 30px 5px;
 					padding: 15px;
-					font-size: 1rem;
+					font-size: 15px;
+					letter-spacing: 3px;
 				}
 			}
 		}
@@ -198,7 +200,6 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			
 
 			.messages {
 				width: 90%;
@@ -227,8 +228,8 @@
 
 				.connect-btn {
 					margin: 0 75px;
-					padding: 25px;
-					font-size: 1.1rem;
+					padding: 15px 25px;
+					font-size: 20px;
 				}
 			}
 		}

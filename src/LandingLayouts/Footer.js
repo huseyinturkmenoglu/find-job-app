@@ -55,7 +55,7 @@ export default function Footer() {
 			</div>
 			<div className="project-info">
 				<div className="project">
-					© 2021 FindJob Staffing & Recruiting - Demo -
+					🤟2021 FindJob Staffing & Recruiting - Demo - 🤟
 				</div>
 				<div className="supporter">
 					<a href="https://storyset.com/job">

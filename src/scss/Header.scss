@@ -53,7 +53,7 @@
 
 		.signUp-btn {
 			display: flex;
-			background-color: var(--primary-menu-btn-bg);
+			background-color: var(--primary-btn-bg);
 			color: var(--primary-menu-btn-text-color);
 			padding: 25px;
 			justify-content: space-around;
@@ -183,10 +183,6 @@
 				display: flex;
 				justify-content: space-evenly;
 				width: 100%;
-
-				li {
-					font-size: 2rem;
-				}
 			}
 		}
 
