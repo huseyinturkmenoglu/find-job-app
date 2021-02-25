@@ -27,12 +27,17 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* Layouts */
 @import "./Header.scss";
 @import "./Content.scss";
 @import "./SearchArea.scss";
 @import "./WeeklyEmailArea.scss";
 @import "./Footer.scss";
+/* Components */
+@import "./Modal.scss";
 
+/* Utitlity */
+@import "./Utility.scss";
 
 .no-page {
 	display: flex;

@@ -202,6 +202,10 @@
 		.searchJobs {
 			.job {
 				width: 15%;
+
+				.job-title {
+					width: 50%;
+				}
 			}
 		}
 	}

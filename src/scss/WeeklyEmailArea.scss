@@ -64,7 +64,19 @@
 			}
 			
 		}
-	}
+	}	
+}
+
+.info-success {
+	font-size: 25px;
+	margin-bottom: 25px;
+	font-weight: 300;
+}
+
+.strong-text {
+	display: block;
+	text-align: center;
+	font-weight: 600;
 }
 
 @media screen and (max-width: 576px) {

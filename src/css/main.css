@@ -26,6 +26,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Layouts */
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -553,6 +554,9 @@ body {
   .searchArea .searchJobs .job {
     width: 15%;
   }
+  .searchArea .searchJobs .job .job-title {
+    width: 50%;
+  }
 }
 .weekly-email-area {
   width: 100%;
@@ -611,6 +615,18 @@ body {
 }
 .weekly-email-area .weekly-email .weekly button:hover {
   box-shadow: 0px 0px 20px 0px var(--primary-btn-bg-60);
+}
+
+.info-success {
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.strong-text {
+  display: block;
+  text-align: center;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 576px) {
@@ -762,6 +778,52 @@ max-width: 768px
 max-width: 992px
 max-width: 1200px
 */
+/* Components */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  background-color: var(--primary-menu-btn-bg);
+  width: 100%;
+  height: 100%;
+}
+.modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  background-color: var(--primary-color-f1);
+  padding: 25px;
+  position: relative;
+  top: 5vh;
+  border-radius: 15% 35% 15% 35%;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+/* Utitlity */
+.btn-modal {
+  padding: 15px;
+  background-color: var(--primary-btn-bg-45);
+  height: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+  color: var(--primary-menu-btn-text-color);
+  transition: all 0.35s;
+  border: none;
+  cursor: pointer;
+}
+.btn-modal:hover {
+  background-color: var(--primary-btn-bg);
+}
+
 .no-page {
   display: flex;
   flex-direction: column;
