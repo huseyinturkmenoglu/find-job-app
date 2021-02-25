@@ -35,7 +35,6 @@
 					background-color: transparent;
 					outline: none;
 					border: none;
-					font-size: 2rem;
 
 					&::placeholder {
 						color: var(--primary-menu-btn-text-color);
@@ -91,7 +90,7 @@
 				background-color: var(--primary-btn-bg-45);
 				height: 100%;
 				border-radius: 15px;
-				font-size: 2rem;
+				font-size: 1.5rem;
 				color: var(--primary-menu-btn-text-color);
 				transition: all 0.35s;
 
@@ -174,6 +173,9 @@
 
 @media screen and (min-width: 1200px) {
 	.searchArea {
+		padding: 0 100px;
+		margin-top: 50px;
+
 		.searchArea-btn {
 			.search-input {
 				width: 80%;
@@ -192,9 +194,7 @@
 					width: 90%;
 
 					input {
-
-						font-size: 2rem;
-
+						font-size: 1.7rem;
 					}
 				}
 			}

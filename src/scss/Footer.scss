@@ -84,9 +84,20 @@
 
 @media screen and (min-width: 1200px) {
     .footer {
+		margin-left: 50px;
+		width: 95%;
 		.social-area {
 			width: 20%;
 			height: 100%;
+		}
+
+		.project-info {
+			.project{
+				font-size: 1rem;
+			}
+			.supporter{
+				font-size: 1rem;
+			}
 		}
 	}
 }

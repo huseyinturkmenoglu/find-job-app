@@ -2506,15 +2506,14 @@ export default function WeeklyEmailArea() {
 						fill="#37474F"
 					/>
 				</svg>
-				;
 			</div>
 			<div className="weekly-email">
-                <h1>Sing up weekly new jobs </h1>
-                <div className="weekly">
-                    <input type="text" placeholder="Email Address"/>
-                    <button>Sign me up</button>
-                </div>
-            </div>
+				<h1>Sing up weekly new jobs </h1>
+				<div className="weekly">
+					<input type="email" required placeholder="Email Address" />
+					<button>Sign me up</button>
+				</div>
+			</div>
 		</div>
 	);
 }

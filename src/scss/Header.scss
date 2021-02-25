@@ -167,6 +167,7 @@
 
 @media screen and (min-width: 1200px) {
 	.header {
+		padding: 0 100px;
 		.logo {
 			width: 15%;
 		}
@@ -182,6 +183,10 @@
 				display: flex;
 				justify-content: space-evenly;
 				width: 100%;
+
+				li {
+					font-size: 2rem;
+				}
 			}
 		}
 
