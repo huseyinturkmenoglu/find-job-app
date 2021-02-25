@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = ({ children, show, text, handleClose }) => {
+const Modal = ({ children, show, handleClose }) => {
 	const showModal = show ? "modal display-block" : "modal display-none";
 
 	return (
