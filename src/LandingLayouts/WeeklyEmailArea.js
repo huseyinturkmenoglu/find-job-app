@@ -35,7 +35,7 @@ export default function WeeklyEmailArea() {
 					</div>
 				</div>
 			</form>
-			<Modal text={email} show={showModal} handleClose={handleClose}>
+			<Modal text={email} show={showModal} handleClose={handleClose} closeBtn={true}>
 				<HighFive />
 				<div className="info-success">
 					Congratulations! We send weekly the new open jobs to your email : 

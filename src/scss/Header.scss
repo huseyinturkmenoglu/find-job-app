@@ -84,13 +84,27 @@
 			width: 50%;
 
 			.mobile-menu {
-				display: inline-block;
+				display: flex;
 				width: 20%;
+				cursor: pointer;
 
 				svg {
-					width: 70%;
-					height: 70%;
+					width: 35px;
+					height: 35px;
 					color: var(--primary-text-color-black);
+				}
+
+				&:hover {
+					background-color: var(--primary-btn-bg--45);
+				}
+			}
+
+			.modal {
+				.modal-body {
+					ul {
+						display: flex;
+						flex-direction: column;
+					}
 				}
 			}
 
@@ -116,13 +130,28 @@
 			width: 40%;
 
 			.mobile-menu {
-				display: inline-block;
-				width: 30%;
+				display: flex;
+				border-radius: 20px;
+				padding: 10px;
+				cursor: pointer;
 
 				svg {
-					width: 50%;
-					height: 100%;
+					width: 35px;
+					height: 35px;
 					color: var(--primary-text-color-black);
+				}
+
+				&:hover {
+					background-color: var(--primary-btn-bg--45);
+				}
+			}
+
+			.modal {
+				.modal-body {
+					ul {
+						display: flex;
+						flex-direction: column;
+					}
 				}
 			}
 
@@ -149,6 +178,14 @@
 
 			.mobile-menu {
 				display: none;
+			}
+
+			.modal {
+				.modal-body {
+					ul {
+						display: none;
+					}
+				}
 			}
 
 			ul {
@@ -179,6 +216,14 @@
 				display: none;
 			}
 
+			.modal {
+				.modal-body {
+					ul {
+						display: none;
+					}
+				}
+			}
+
 			ul {
 				display: flex;
 				justify-content: space-evenly;
@@ -188,7 +233,7 @@
 
 		.signUp {
 			width: 30%;
-			margin-top: 0px
+			margin-top: 0px;
 		}
 	}
 }

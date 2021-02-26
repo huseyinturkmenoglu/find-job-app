@@ -13,3 +13,19 @@
         background-color: var(--primary-btn-bg);
     }
 }
+
+.btn-modal-mobile {
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    right: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    svg {
+        color: var(--primary-btn-bg);
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,6 +1,27 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Modal from "../components/Modal";
 
 const Header = () => {
+	const [showMenu, setShowMenu] = useState(false);
+
+	const handleShowMenu = () => {
+		setShowMenu(true);
+	};
+
+	const handleCloseMenu = () => setShowMenu(false);
+
+	const MenuStructure = () => (
+		<ul>
+			<li>
+				<Link to="/">Home</Link>
+			</li>
+			<li>
+				<Link to="/joblists">Jobs</Link>
+			</li>
+			<li>Contacts</li>
+		</ul>
+	);
 	return (
 		<div className="header">
 			<div className="logo">
@@ -23,7 +44,7 @@ const Header = () => {
 				</svg>
 			</div>
 			<div className="menu">
-				<div className="mobile-menu">
+				<div className="mobile-menu" onClick={handleShowMenu}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="16"
@@ -38,15 +59,15 @@ const Header = () => {
 						/>
 					</svg>
 				</div>
-				<ul>
-					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/joblists">Jobs</Link>
-					</li>
-					<li>Contacts</li>
-				</ul>
+
+				<Modal
+					show={showMenu}
+					handleClose={handleCloseMenu}
+					closeBtn={false}
+				>
+					<MenuStructure />
+				</Modal>
+				<MenuStructure />
 			</div>
 			<div className="signUp">
 				<Link to="/new" className="signUp-btn">

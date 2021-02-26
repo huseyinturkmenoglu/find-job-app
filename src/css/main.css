@@ -72,6 +72,21 @@ body {
   background-color: var(--primary-btn-bg);
 }
 
+.btn-modal-mobile {
+  position: absolute;
+  top: 15px;
+  display: inline-block;
+  right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.btn-modal-mobile svg {
+  color: var(--primary-btn-bg);
+  width: 30px;
+  height: 30px;
+}
+
 /* Layouts */
 .header {
   display: flex;
@@ -148,13 +163,21 @@ body {
     width: 50%;
   }
   .header .menu .mobile-menu {
-    display: inline-block;
+    display: flex;
     width: 20%;
+    cursor: pointer;
   }
   .header .menu .mobile-menu svg {
-    width: 70%;
-    height: 70%;
+    width: 35px;
+    height: 35px;
     color: var(--primary-text-color-black);
+  }
+  .header .menu .mobile-menu:hover {
+    background-color: var(--primary-btn-bg--45);
+  }
+  .header .menu .modal .modal-body ul {
+    display: flex;
+    flex-direction: column;
   }
   .header .menu ul {
     display: none;
@@ -172,13 +195,22 @@ body {
     width: 40%;
   }
   .header .menu .mobile-menu {
-    display: inline-block;
-    width: 30%;
+    display: flex;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
   }
   .header .menu .mobile-menu svg {
-    width: 50%;
-    height: 100%;
+    width: 35px;
+    height: 35px;
     color: var(--primary-text-color-black);
+  }
+  .header .menu .mobile-menu:hover {
+    background-color: var(--primary-btn-bg--45);
+  }
+  .header .menu .modal .modal-body ul {
+    display: flex;
+    flex-direction: column;
   }
   .header .menu ul {
     display: none;
@@ -196,6 +228,9 @@ body {
     width: 80%;
   }
   .header .menu .mobile-menu {
+    display: none;
+  }
+  .header .menu .modal .modal-body ul {
     display: none;
   }
   .header .menu ul {
@@ -219,6 +254,9 @@ body {
     width: 55%;
   }
   .header .menu .mobile-menu {
+    display: none;
+  }
+  .header .menu .modal .modal-body ul {
     display: none;
   }
   .header .menu ul {
@@ -380,7 +418,7 @@ body {
   .content .content-message .messages .p-one,
 .content .content-message .messages .p-two {
     font-size: 1.9rem;
-    width: 80%;
+    width: 81%;
     margin-bottom: 25px;
   }
   .content .content-message .messages .connect-btn {
