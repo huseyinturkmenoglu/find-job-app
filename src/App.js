@@ -1,4 +1,4 @@
-import "./css/main.css";
+import "./index.css";
 
 import LandingLayout from "./LandingLayouts/LandingLayout";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
