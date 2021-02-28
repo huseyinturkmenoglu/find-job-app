@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import firmLogo from "../images/firm-logo.png";
 
-import { persons } from "../api/data.json";
+import { persons } from "../assets/api/data.json";
 
 export default function SearchArea() {
 	return (
@@ -33,7 +32,7 @@ export default function SearchArea() {
 				{persons.map((person) => (
 					<div className="job" key={person.id}>
 						<div className="firm-logo">
-							<div className="firm" src={firmLogo} >{person.company_name}</div>
+							<div className="firm">{person.company_name}</div>
 						</div>
 						<div className="job-title">
 							{person.job}

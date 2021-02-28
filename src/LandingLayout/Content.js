@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BusinessDecision from '../svg/BusinessDecisions';
+import BusinessDecision from '../assets/svg/BusinessDecisions';
 
 export default function Content() {
 	return (

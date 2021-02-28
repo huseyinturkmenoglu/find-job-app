@@ -1,8 +1,8 @@
 import React from "react";
 import Modal from "../components/Modal";
 
-import JobHunt from "../svg/JobHunt";
-import HighFive from "../svg/HighFive";
+import JobHunt from "../assets/svg/JobHunt";
+import HighFive from "../assets/svg/HighFive";
 
 export default function WeeklyEmailArea() {
 	const [showModal, setShowModal] = React.useState(false);
