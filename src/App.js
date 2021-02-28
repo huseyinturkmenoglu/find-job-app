@@ -1,7 +1,7 @@
 import "./index.css";
 
-import LandingLayout from "./LandingLayouts/LandingLayout";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import LandingLayout from "./LandingLayout/LandingLayout";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Page404 from "./components/Page404";
 
 function App() {

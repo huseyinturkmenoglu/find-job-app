@@ -64,11 +64,19 @@
 
 			.firm-logo {
 				width: auto;
-				height: 50%;
+				margin: auto;
 
-				img {
-					margin-top: 15px;
+				.firm {
+					border: 1px dotted;
+					padding: 5px;
+					margin: 15px 15px;
+					text-align: center;
 				}
+			}
+
+			.job-title {
+				margin: auto;
+				text-align: center;
 			}
 
 			&:nth-child(odd) {

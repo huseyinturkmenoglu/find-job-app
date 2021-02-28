@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import firmLogo from "../images/firm-logo.png";
 
+import { persons } from "../api/data.json";
+
 export default function SearchArea() {
 	return (
 		<div className="searchArea">
@@ -28,78 +30,16 @@ export default function SearchArea() {
 				</div>
 			</div>
 			<div className="searchJobs">
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
+				{persons.map((person) => (
+					<div className="job" key={person.id}>
+						<div className="firm-logo">
+							<div className="firm" src={firmLogo} >{person.company_name}</div>
+						</div>
+						<div className="job-title">
+							{person.job}
+						</div>
 					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
-				<div className="job">
-					<div className="firm-logo">
-						<img src={firmLogo} />
-					</div>
-					<div className="job-title">Senior Frontend Developer</div>
-				</div>
+				))}
 			</div>
 			<div className="searchMode">
 				<div className="more-jobs">

@@ -541,10 +541,17 @@ body {
 }
 .searchArea .searchJobs .job .firm-logo {
   width: auto;
-  height: 50%;
+  margin: auto;
 }
-.searchArea .searchJobs .job .firm-logo img {
-  margin-top: 15px;
+.searchArea .searchJobs .job .firm-logo .firm {
+  border: 1px dotted;
+  padding: 5px;
+  margin: 15px 15px;
+  text-align: center;
+}
+.searchArea .searchJobs .job .job-title {
+  margin: auto;
+  text-align: center;
 }
 .searchArea .searchJobs .job:nth-child(odd) {
   background-color: var(--primary-color-f1);

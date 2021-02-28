@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../LandingLayouts/Footer";
-import Header from "../LandingLayouts/Header";
+import Footer from "../LandingLayout/Footer";
+import Header from "../LandingLayout/Header";
 import ContentTeam from "../svg/ContentTeam";
 
 export default function Page404() {
