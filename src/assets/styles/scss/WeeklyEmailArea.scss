@@ -54,15 +54,13 @@
 				color: var(--primary-menu-btn-text-color);
 				cursor: pointer;
 				transition: all 0.25s;
-				
+
 				&:hover {
 					background-color: var(--primary-menu-btn-bg-hover);
 				}
-				
 			}
-			
 		}
-	}	
+	}
 }
 
 .info-success {
@@ -108,20 +106,20 @@
 					line-height: 1px;
 					width: 95%;
 					margin: 0 5px;
-					font-size: 25px;
+					font-size: 20px;
 				}
 			}
 		}
 	}
 
 	.modal {
-		.modal-body{
+		.modal-body {
 			margin: 0px;
 			padding: 0px;
 
 			svg {
 				height: 50%;
-    			width: 100%;
+				width: 100%;
 			}
 		}
 	}

@@ -153,6 +153,7 @@ body {
 .header .signUp .signUp-btn .signUp-text {
   letter-spacing: 5px;
   margin: 0px 15px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -326,18 +327,18 @@ body {
   }
   .content .content-message .messages h1 {
     width: 80%;
-    font-size: 2rem;
+    font-size: 30px;
     margin-bottom: 25px;
   }
   .content .content-message .messages .p-one,
 .content .content-message .messages .p-two {
-    font-size: 1.7rem;
+    font-size: 25px;
     width: 80%;
     margin-bottom: 25px;
   }
   .content .content-message .messages .connect-btn {
     padding: 15px;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 3px;
     width: 100%;
     margin: 30px 10px;
@@ -370,18 +371,18 @@ body {
   }
   .content .content-message .messages h1 {
     width: 80%;
-    font-size: 2rem;
+    font-size: 30px;
     margin-bottom: 25px;
   }
   .content .content-message .messages .p-one,
 .content .content-message .messages .p-two {
-    font-size: 1.7rem;
+    font-size: 25px;
     width: 80%;
     margin-bottom: 25px;
   }
   .content .content-message .messages .connect-btn {
     margin: 30px 5px;
-    padding: 15px;
+    padding: 20px;
     font-size: 15px;
     letter-spacing: 3px;
   }
@@ -593,7 +594,7 @@ body {
   }
   .searchArea .searchMode .more-jobs a {
     padding: 15px 30px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 576px) {
@@ -616,7 +617,7 @@ body {
   }
   .searchArea .searchMode .more-jobs a {
     padding: 15px 30px;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -758,7 +759,7 @@ body {
     line-height: 1px;
     width: 95%;
     margin: 0 5px;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .modal .modal-body {
